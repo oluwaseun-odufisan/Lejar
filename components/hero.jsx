@@ -67,14 +67,14 @@ const HeroSection = () => {
     };
 
     return (
-        <section ref={sectionRef} className="relative overflow-hidden py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-orange-50 to-orange-100">
+        <section ref={sectionRef} className="relative overflow-hidden py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-orange-50 to-orange-100 dark:from-orange-900/30 dark:to-gray-900/95">
             <div className="container mx-auto text-center max-w-7xl relative z-10">
                 <motion.h1
                     custom={0}
                     initial="hidden"
                     animate="visible"
                     variants={textVariants}
-                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-orange-800 mb-6 sm:mb-8 mt-19"
+                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-orange-800 dark:text-orange-400 mb-6 sm:mb-8 mt-19"
                 >
                     Finance Management <br /> Made Intelligent
                 </motion.h1>
@@ -83,7 +83,7 @@ const HeroSection = () => {
                     initial="hidden"
                     animate="visible"
                     variants={textVariants}
-                    className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto font-medium"
+                    className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 dark:text-gray-300 mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto font-medium"
                 >
                     Automate your financial tracking, gain AI-powered insights, and optimize your earnings with precision and ease.
                 </motion.p>
@@ -97,7 +97,7 @@ const HeroSection = () => {
                     <Link href="/dashboard">
                         <Button
                             size="lg"
-                            className="w-full sm:w-auto px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-semibold bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+                            className="w-full sm:w-auto px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-semibold bg-orange-600 dark:bg-orange-700 text-white hover:bg-orange-700 dark:hover:bg-orange-800 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                         >
                             Get Started
                         </Button>
@@ -106,7 +106,7 @@ const HeroSection = () => {
                         <Button
                             size="lg"
                             variant="outline"
-                            className="w-full sm:w-auto px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-semibold border-2 border-orange-600 text-orange-600 hover:bg-orange-50 hover:border-orange-700 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+                            className="w-full sm:w-auto px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-semibold border-2 border-orange-600 dark:border-orange-500 text-orange-600 dark:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/30 hover:border-orange-700 dark:hover:border-orange-600 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                         >
                             Watch Demo
                         </Button>
@@ -118,7 +118,7 @@ const HeroSection = () => {
                     variants={imageVariants}
                     whileHover="hover"
                     style={{ y: imageY, opacity: imageOpacity }}
-                    className="relative rounded-2xl shadow-2xl border border-orange-200 overflow-hidden mx-auto w-full max-w-8xl"
+                    className="relative rounded-2xl shadow-2xl border border-orange-200 dark:border-orange-600 overflow-hidden mx-auto w-full max-w-8xl"
                 >
                     <Image
                         src="/banner.png"
@@ -137,14 +137,14 @@ const HeroSection = () => {
                     initial="hidden"
                     animate="visible"
                     variants={bgElementVariants}
-                    className="absolute top-1/4 left-1/6 w-48 sm:w-64 md:w-96 h-48 sm:h-64 md:h-96 bg-gradient-radial from-orange-300 to-transparent rounded-full filter blur-3xl"
+                    className="absolute top-1/4 left-1/6 w-48 sm:w-64 md:w-96 h-48 sm:h-64 md:h-96 bg-gradient-radial from-orange-300 dark:from-orange-700 to-transparent rounded-full filter blur-3xl"
                 ></motion.div>
                 <motion.div
                     initial="hidden"
                     animate="visible"
                     variants={bgElementVariants}
                     transition={{ duration: 2.5, delay: 0.4 }}
-                    className="absolute bottom-1/4 right-1/6 w-48 sm:w-64 md:w-96 h-48 sm:h-64 md:h-96 bg-gradient-radial from-orange-400 to-transparent rounded-full filter blur-3xl"
+                    className="absolute bottom-1/4 right-1/6 w-48 sm:w-64 md:w-96 h-48 sm:h-64 md:h-96 bg-gradient-radial from-orange-400 dark:from-orange-600 to-transparent rounded-full filter blur-3xl"
                 ></motion.div>
             </div>
         </section>

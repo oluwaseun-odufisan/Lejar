@@ -1,0 +1,781 @@
+.
+├── .gitignore
+├── .next
+│   ├── _events.json
+│   ├── app-build-manifest.json
+│   ├── app-path-routes-manifest.json
+│   ├── BUILD_ID
+│   ├── build-manifest.json
+│   ├── cache
+│   │   ├── .previewinfo
+│   │   ├── .rscinfo
+│   │   ├── eslint
+│   │   │   └── .cache_1ljkz9h
+│   │   ├── images
+│   │   │   ├── _LXnd5z2xP82B9BHx9sWnxpijIgAz66E-tvwQBJzflI
+│   │   │   │   └── 2592000.1757610164372.4DIm5qDFdQ5_A8MdldCARc0XW5u0vVBgev3DfMtQ8QA.IjYyYzM4NTg5LTFhZTgi.webp
+│   │   │   ├── 851oMHZmG8qpy9NU-8VwkIHWaMSZWiGKI_yWYDJah8E
+│   │   │   │   └── 2592000.1757610164374.jezr_ZGJfc-sW1nTliF4fI135nd-lVIhuB8Ien0OndU.IjYyYzM4NTg5LTEzZTUi.webp
+│   │   │   ├── 9Brm9vzr1dy4zPcVlwCbTw_pLtLbTDzLsTAT8BJ0rfo
+│   │   │   │   └── 60.1754997919413.S2Lej5y6dqLcPoBdt9aCpbLSf65aHOjpojMjP-xLdNE.Vy8iMjExYjRhLTE5ODlkZmI1Y2U4Ig.webp
+│   │   │   ├── dONB7kSousNvP74Kp_0JP9c5CdIakGGy8BSCNw5O6TU
+│   │   │   │   └── 2592000.1757610164374.yAkUKD8szjW1rhoaHnok7OVYsagwYoS6FV-C0QulQ4A.IjYyYzM4NTg5LTE3NTUi.webp
+│   │   │   ├── e-3J64mHSguGk_RrHDE9Kcnbkp5dU53EfM43V24CjQE
+│   │   │   │   └── 60.1754997789263.CtDj6S7JUtu-sGrlxSCL8s_8JQaj5gLUgCe8fZ8idDY.Vy8iMzExY2QtMTk4OWRmMmFlNDAi.webp
+│   │   │   ├── Gf_kQBsmEQYkSVOwfHcK0DULxDUoYAJoB7bLl484Rlo
+│   │   │   │   └── 60.1754999445519.CtDj6S7JUtu-sGrlxSCL8s_8JQaj5gLUgCe8fZ8idDY.Vy8iMzExY2QtMTk4OWRmMmFlNDAi.webp
+│   │   │   ├── KDDET39OmLdHNXIa2RwZrnfoI3i5IhXGzp4Y1zCR2fQ
+│   │   │   │   └── 60.1755032412131.L9gSygwYX8ydrYR_E8RjXjsEjDL9-_vivqZPTvh7vKI.Vy8iMjExYjRhLTE5ODlkZmI1Y2U4Ig.webp
+│   │   │   ├── rIYo_3f-_DsG2Gq0dDlBK9xIuMDNcEcExeXNNJ7YqkE
+│   │   │   │   └── 60.1755032411907.PWbg7g0p9yeP5ckfbzhdk8rw0pHIxboEMK4BNuSyt-M.Vy8iMzExY2QtMTk4OWRmMmFlNDAi.webp
+│   │   │   ├── RMJscHIiMTk1sOHfLmrcMQsImRXFua2UfdCWRBysZ4A
+│   │   │   │   └── 60.1755017687638.L9gSygwYX8ydrYR_E8RjXjsEjDL9-_vivqZPTvh7vKI.Vy8iMjExYjRhLTE5ODlkZmI1Y2U4Ig.webp
+│   │   │   ├── S1WA9Y-ZuVGwKFxVBFYj14W1NHsnX-AF0AOuLU2wmm4
+│   │   │   │   └── 60.1755030276669.rMgZLE17PqO1BoyIm-4lZIuubvV1yiEOrh8I1KonDAE.Vy8iMjExYjRhLTE5ODlkZmI1Y2U4Ig.webp
+│   │   │   ├── Vsqv3ENYt_G5dmCx4gPtXt5CmPnMR5fPUfmv-QvF7B0
+│   │   │   │   └── 60.1754999393953.wW-Q2fi6RR9Ul7H66z7LNkZqnoPIW1K4oUOvrY6jeQc.Vy8iMzExY2QtMTk4OWRmMmFlNDAi.webp
+│   │   │   ├── Vx5jUFVZ-PJdp2mDLnp7vvMQJl-9TyKLVnSORJdCLT8
+│   │   │   │   └── 60.1755030559653.YMY83jLbesVp4I2gkU7yZGh-cKsk8vYIdLezbrCZ31o.Vy8iMzExY2QtMTk4OWRmMmFlNDAi.webp
+│   │   │   ├── WBt36qq3I00Yfg9hwapRU0dNhMn1C6w6X0eiR2lOtjk
+│   │   │   │   └── 60.1755032426603.kvoJn0kUpuYpEWWs6wmQ8rjmmCDDEOzUp-FMPfS0h2s.Vy8iMjExYjRhLTE5ODlkZmI1Y2U4Ig.webp
+│   │   │   ├── wNnedv6ikCz2gWKMN7xtJIjsHUVYSocMFR3_ArpZ0o8
+│   │   │   │   └── 60.1754999498251.CtDj6S7JUtu-sGrlxSCL8s_8JQaj5gLUgCe8fZ8idDY.Vy8iMzExY2QtMTk4OWRmMmFlNDAi.webp
+│   │   │   └── xZc9wqtzmJJ_XiE2PO47Ll5pU2d-3U5js5UArxwyJPE
+│   │   │       └── 60.1755029851045.L9gSygwYX8ydrYR_E8RjXjsEjDL9-_vivqZPTvh7vKI.Vy8iMjExYjRhLTE5ODlkZmI1Y2U4Ig.webp
+│   │   ├── swc
+│   │   │   └── plugins
+│   │   │       └── v7_macos_x86_64_17.0.0
+│   │   └── webpack
+│   │       ├── client-production
+│   │       │   ├── 0.pack
+│   │       │   └── index.pack
+│   │       ├── edge-server-production
+│   │       │   ├── 0.pack
+│   │       │   └── index.pack
+│   │       └── server-production
+│   │           ├── 0.pack
+│   │           └── index.pack
+│   ├── diagnostics
+│   │   ├── build-diagnostics.json
+│   │   └── framework.json
+│   ├── export-marker.json
+│   ├── fallback-build-manifest.json
+│   ├── images-manifest.json
+│   ├── next-minimal-server.js.nft.json
+│   ├── next-server.js.nft.json
+│   ├── package.json
+│   ├── postcss.js
+│   ├── postcss.js.map
+│   ├── prerender-manifest.json
+│   ├── react-loadable-manifest.json
+│   ├── required-server-files.json
+│   ├── routes-manifest.json
+│   ├── server
+│   │   ├── app
+│   │   │   ├── _not-found
+│   │   │   │   ├── page
+│   │   │   │   │   ├── app-build-manifest.json
+│   │   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   │   ├── build-manifest.json
+│   │   │   │   │   ├── next-font-manifest.json
+│   │   │   │   │   ├── react-loadable-manifest.json
+│   │   │   │   │   └── server-reference-manifest.json
+│   │   │   │   ├── page_client-reference-manifest.js
+│   │   │   │   ├── page.js
+│   │   │   │   ├── page.js.map
+│   │   │   │   └── page.js.nft.json
+│   │   │   ├── _not-found.html
+│   │   │   ├── _not-found.meta
+│   │   │   ├── _not-found.rsc
+│   │   │   ├── (auth)
+│   │   │   │   └── sign-in
+│   │   │   │       ├── [[...sign-in]]
+│   │   │   │       │   ├── page
+│   │   │   │       │   │   ├── app-build-manifest.json
+│   │   │   │       │   │   ├── app-paths-manifest.json
+│   │   │   │       │   │   ├── build-manifest.json
+│   │   │   │       │   │   ├── next-font-manifest.json
+│   │   │   │       │   │   ├── react-loadable-manifest.json
+│   │   │   │       │   │   └── server-reference-manifest.json
+│   │   │   │       │   ├── page_client-reference-manifest.js
+│   │   │   │       │   ├── page.js
+│   │   │   │       │   ├── page.js.map
+│   │   │   │       │   └── page.js.nft.json
+│   │   │   │       └── sign-up
+│   │   │   │           └── [[...sign-up]]
+│   │   │   │               ├── page_client-reference-manifest.js
+│   │   │   │               ├── page.js
+│   │   │   │               └── page.js.nft.json
+│   │   │   ├── favicon.ico
+│   │   │   │   ├── route
+│   │   │   │   │   ├── app-build-manifest.json
+│   │   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   │   └── build-manifest.json
+│   │   │   │   ├── route.js
+│   │   │   │   ├── route.js.map
+│   │   │   │   └── route.js.nft.json
+│   │   │   ├── favicon.ico.body
+│   │   │   ├── favicon.ico.meta
+│   │   │   ├── index.html
+│   │   │   ├── index.meta
+│   │   │   ├── index.rsc
+│   │   │   ├── page
+│   │   │   │   ├── app-build-manifest.json
+│   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   ├── build-manifest.json
+│   │   │   │   ├── next-font-manifest.json
+│   │   │   │   ├── react-loadable-manifest.json
+│   │   │   │   └── server-reference-manifest.json
+│   │   │   ├── page_client-reference-manifest.js
+│   │   │   ├── page.js
+│   │   │   ├── page.js.map
+│   │   │   └── page.js.nft.json
+│   │   ├── app-paths-manifest.json
+│   │   ├── chunks
+│   │   │   ├── [root-of-the-server]__c478b14a._.js
+│   │   │   ├── [root-of-the-server]__c478b14a._.js.map
+│   │   │   ├── [turbopack]_runtime.js
+│   │   │   ├── [turbopack]_runtime.js.map
+│   │   │   ├── 106.js
+│   │   │   ├── 11.js
+│   │   │   ├── 548.js
+│   │   │   ├── 553.js
+│   │   │   ├── 583.js
+│   │   │   ├── 824.js
+│   │   │   ├── 935.js
+│   │   │   ├── 956.js
+│   │   │   ├── 966.js
+│   │   │   ├── node_modules_next_5ea5f2ed._.js
+│   │   │   ├── node_modules_next_5ea5f2ed._.js.map
+│   │   │   └── ssr
+│   │   │       ├── _3a66aef8._.js
+│   │   │       ├── _3a66aef8._.js.map
+│   │   │       ├── _6aee8eb7._.js
+│   │   │       ├── _6aee8eb7._.js.map
+│   │   │       ├── _78877be3._.js
+│   │   │       ├── _78877be3._.js.map
+│   │   │       ├── _8a921f57._.js
+│   │   │       ├── _8a921f57._.js.map
+│   │   │       ├── _959fed2e._.js
+│   │   │       ├── _959fed2e._.js.map
+│   │   │       ├── _9903e1cf._.js
+│   │   │       ├── _9903e1cf._.js.map
+│   │   │       ├── _ba8d52f0._.js
+│   │   │       ├── _ba8d52f0._.js.map
+│   │   │       ├── _c15f4e8f._.js
+│   │   │       ├── _c15f4e8f._.js.map
+│   │   │       ├── _cd3591d1._.js
+│   │   │       ├── _cd3591d1._.js.map
+│   │   │       ├── _d11586fe._.js
+│   │   │       ├── _d11586fe._.js.map
+│   │   │       ├── _e8f0878a._.js
+│   │   │       ├── _e8f0878a._.js.map
+│   │   │       ├── _ee30cf7e._.js
+│   │   │       ├── _ee30cf7e._.js.map
+│   │   │       ├── [externals]_next_dist_shared_lib_no-fallback-error_external_d7a8835d.js
+│   │   │       ├── [externals]_next_dist_shared_lib_no-fallback-error_external_d7a8835d.js.map
+│   │   │       ├── [root-of-the-server]__11b4e068._.js
+│   │   │       ├── [root-of-the-server]__11b4e068._.js.map
+│   │   │       ├── [root-of-the-server]__16ea7f20._.js
+│   │   │       ├── [root-of-the-server]__16ea7f20._.js.map
+│   │   │       ├── [root-of-the-server]__24e9d8bd._.js
+│   │   │       ├── [root-of-the-server]__24e9d8bd._.js.map
+│   │   │       ├── [root-of-the-server]__2b395a32._.js
+│   │   │       ├── [root-of-the-server]__2b395a32._.js.map
+│   │   │       ├── [root-of-the-server]__386a273a._.js
+│   │   │       ├── [root-of-the-server]__386a273a._.js.map
+│   │   │       ├── [root-of-the-server]__3f5ce7ff._.js
+│   │   │       ├── [root-of-the-server]__3f5ce7ff._.js.map
+│   │   │       ├── [root-of-the-server]__4a683773._.js
+│   │   │       ├── [root-of-the-server]__4a683773._.js.map
+│   │   │       ├── [root-of-the-server]__4c36add2._.js
+│   │   │       ├── [root-of-the-server]__4c36add2._.js.map
+│   │   │       ├── [root-of-the-server]__6398879f._.js
+│   │   │       ├── [root-of-the-server]__6398879f._.js.map
+│   │   │       ├── [root-of-the-server]__6a4ece76._.js
+│   │   │       ├── [root-of-the-server]__6a4ece76._.js.map
+│   │   │       ├── [root-of-the-server]__6ad1ab14._.js
+│   │   │       ├── [root-of-the-server]__6ad1ab14._.js.map
+│   │   │       ├── [root-of-the-server]__6f1e929a._.js
+│   │   │       ├── [root-of-the-server]__6f1e929a._.js.map
+│   │   │       ├── [root-of-the-server]__86e7898f._.js
+│   │   │       ├── [root-of-the-server]__86e7898f._.js.map
+│   │   │       ├── [root-of-the-server]__876f2fd4._.js
+│   │   │       ├── [root-of-the-server]__876f2fd4._.js.map
+│   │   │       ├── [root-of-the-server]__8c0069ad._.js
+│   │   │       ├── [root-of-the-server]__8c0069ad._.js.map
+│   │   │       ├── [root-of-the-server]__a66dbf48._.js
+│   │   │       ├── [root-of-the-server]__a66dbf48._.js.map
+│   │   │       ├── [root-of-the-server]__ac58abba._.js
+│   │   │       ├── [root-of-the-server]__ac58abba._.js.map
+│   │   │       ├── [root-of-the-server]__b6a7c134._.js
+│   │   │       ├── [root-of-the-server]__b6a7c134._.js.map
+│   │   │       ├── [root-of-the-server]__b7257d1c._.js
+│   │   │       ├── [root-of-the-server]__b7257d1c._.js.map
+│   │   │       ├── [root-of-the-server]__c75c51b7._.js
+│   │   │       ├── [root-of-the-server]__c75c51b7._.js.map
+│   │   │       ├── [root-of-the-server]__c7e7d7fe._.js
+│   │   │       ├── [root-of-the-server]__c7e7d7fe._.js.map
+│   │   │       ├── [root-of-the-server]__ce52c122._.js
+│   │   │       ├── [root-of-the-server]__ce52c122._.js.map
+│   │   │       ├── [root-of-the-server]__d8593af1._.js
+│   │   │       ├── [root-of-the-server]__d8593af1._.js.map
+│   │   │       ├── [root-of-the-server]__e25c602f._.js
+│   │   │       ├── [root-of-the-server]__e25c602f._.js.map
+│   │   │       ├── [root-of-the-server]__eb829d2f._.js
+│   │   │       ├── [root-of-the-server]__eb829d2f._.js.map
+│   │   │       ├── [root-of-the-server]__eddce263._.js
+│   │   │       ├── [root-of-the-server]__eddce263._.js.map
+│   │   │       ├── [root-of-the-server]__eee7f1ea._.js
+│   │   │       ├── [root-of-the-server]__eee7f1ea._.js.map
+│   │   │       ├── [root-of-the-server]__f221d559._.js
+│   │   │       ├── [root-of-the-server]__f221d559._.js.map
+│   │   │       ├── [root-of-the-server]__f7b01dce._.js
+│   │   │       ├── [root-of-the-server]__f7b01dce._.js.map
+│   │   │       ├── [root-of-the-server]__fd76f26a._.js
+│   │   │       ├── [root-of-the-server]__fd76f26a._.js.map
+│   │   │       ├── [root-of-the-server]__fe764c77._.js
+│   │   │       ├── [root-of-the-server]__fe764c77._.js.map
+│   │   │       ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_59fa4ecd._.js
+│   │   │       ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_59fa4ecd._.js.map
+│   │   │       ├── [turbopack]_runtime.js
+│   │   │       ├── [turbopack]_runtime.js.map
+│   │   │       ├── app_(auth)_layout_280640b3.js
+│   │   │       ├── app_(auth)_layout_280640b3.js.map
+│   │   │       ├── app_1f3630ef._.js
+│   │   │       ├── app_1f3630ef._.js.map
+│   │   │       ├── components_hero_jsx_2b4532d8._.js
+│   │   │       ├── components_hero_jsx_2b4532d8._.js.map
+│   │   │       ├── dd92d_modules_@clerk_nextjs_dist_esm_app-router_client_keyless-cookie-sync_dd8d3297.js
+│   │   │       ├── dd92d_modules_@clerk_nextjs_dist_esm_app-router_client_keyless-cookie-sync_dd8d3297.js.map
+│   │   │       ├── node_modules_@clerk_backend_dist_0ab49246._.js
+│   │   │       ├── node_modules_@clerk_backend_dist_0ab49246._.js.map
+│   │   │       ├── node_modules_@clerk_backend_dist_5799f74a._.js
+│   │   │       ├── node_modules_@clerk_backend_dist_5799f74a._.js.map
+│   │   │       ├── node_modules_@clerk_clerk-react_dist_c36994e8._.js
+│   │   │       ├── node_modules_@clerk_clerk-react_dist_c36994e8._.js.map
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_579a9908._.js
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_579a9908._.js.map
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_app-router_275b1d70._.js
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_app-router_275b1d70._.js.map
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_app-router_729f9d89._.js
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_app-router_729f9d89._.js.map
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_bbbc0b2a._.js
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_bbbc0b2a._.js.map
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_client-boundary_fbaf34e1._.js
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_client-boundary_fbaf34e1._.js.map
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_d2624b15._.js
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_d2624b15._.js.map
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_server_keyless-log-cache_510112f4.js
+│   │   │       ├── node_modules_@clerk_nextjs_dist_esm_server_keyless-log-cache_510112f4.js.map
+│   │   │       ├── node_modules_@clerk_shared_dist_6a3126ee._.js
+│   │   │       ├── node_modules_@clerk_shared_dist_6a3126ee._.js.map
+│   │   │       ├── node_modules_@clerk_shared_dist_6f648887._.js
+│   │   │       ├── node_modules_@clerk_shared_dist_6f648887._.js.map
+│   │   │       ├── node_modules_049f1e35._.js
+│   │   │       ├── node_modules_049f1e35._.js.map
+│   │   │       ├── node_modules_0c31e33e._.js
+│   │   │       ├── node_modules_0c31e33e._.js.map
+│   │   │       ├── node_modules_1eae364a._.js
+│   │   │       ├── node_modules_1eae364a._.js.map
+│   │   │       ├── node_modules_2fc0a32d._.js
+│   │   │       ├── node_modules_2fc0a32d._.js.map
+│   │   │       ├── node_modules_32029f04._.js
+│   │   │       ├── node_modules_32029f04._.js.map
+│   │   │       ├── node_modules_34d940b7._.js
+│   │   │       ├── node_modules_34d940b7._.js.map
+│   │   │       ├── node_modules_4886c51f._.js
+│   │   │       ├── node_modules_4886c51f._.js.map
+│   │   │       ├── node_modules_60693889._.js
+│   │   │       ├── node_modules_60693889._.js.map
+│   │   │       ├── node_modules_618b3959._.js
+│   │   │       ├── node_modules_618b3959._.js.map
+│   │   │       ├── node_modules_6ce6314d._.js
+│   │   │       ├── node_modules_6ce6314d._.js.map
+│   │   │       ├── node_modules_7c144961._.js
+│   │   │       ├── node_modules_7c144961._.js.map
+│   │   │       ├── node_modules_83e7a2d8._.js
+│   │   │       ├── node_modules_83e7a2d8._.js.map
+│   │   │       ├── node_modules_8b2c6f43._.js
+│   │   │       ├── node_modules_8b2c6f43._.js.map
+│   │   │       ├── node_modules_8f6f1fe5._.js
+│   │   │       ├── node_modules_8f6f1fe5._.js.map
+│   │   │       ├── node_modules_8f848e63._.js
+│   │   │       ├── node_modules_8f848e63._.js.map
+│   │   │       ├── node_modules_9a654079._.js
+│   │   │       ├── node_modules_9a654079._.js.map
+│   │   │       ├── node_modules_a3796abf._.js
+│   │   │       ├── node_modules_a3796abf._.js.map
+│   │   │       ├── node_modules_b1ad5d34._.js
+│   │   │       ├── node_modules_b1ad5d34._.js.map
+│   │   │       ├── node_modules_b59c985a._.js
+│   │   │       ├── node_modules_b59c985a._.js.map
+│   │   │       ├── node_modules_bdade565._.js
+│   │   │       ├── node_modules_bdade565._.js.map
+│   │   │       ├── node_modules_bf671b14._.js
+│   │   │       ├── node_modules_bf671b14._.js.map
+│   │   │       ├── node_modules_daac2712._.js
+│   │   │       ├── node_modules_daac2712._.js.map
+│   │   │       ├── node_modules_dbb48dd9._.js
+│   │   │       ├── node_modules_dbb48dd9._.js.map
+│   │   │       ├── node_modules_e4480de4._.js
+│   │   │       ├── node_modules_e4480de4._.js.map
+│   │   │       ├── node_modules_e75dc618._.js
+│   │   │       ├── node_modules_e75dc618._.js.map
+│   │   │       ├── node_modules_e89ab976._.js
+│   │   │       ├── node_modules_e89ab976._.js.map
+│   │   │       ├── node_modules_framer-motion_dist_es_56e05238._.js
+│   │   │       ├── node_modules_framer-motion_dist_es_56e05238._.js.map
+│   │   │       ├── node_modules_framer-motion_dist_es_e4e80cf2._.js
+│   │   │       ├── node_modules_framer-motion_dist_es_e4e80cf2._.js.map
+│   │   │       ├── node_modules_framer-motion_dist_es_index_mjs_1d4abf94._.js
+│   │   │       ├── node_modules_framer-motion_dist_es_index_mjs_1d4abf94._.js.map
+│   │   │       ├── node_modules_motion-dom_dist_es_2a012ac2._.js
+│   │   │       ├── node_modules_motion-dom_dist_es_2a012ac2._.js.map
+│   │   │       ├── node_modules_motion-dom_dist_es_c15fdddc._.js
+│   │   │       ├── node_modules_motion-dom_dist_es_c15fdddc._.js.map
+│   │   │       ├── node_modules_next_2b6ed7fc._.js
+│   │   │       ├── node_modules_next_2b6ed7fc._.js.map
+│   │   │       ├── node_modules_next_45e7458b._.js
+│   │   │       ├── node_modules_next_45e7458b._.js.map
+│   │   │       ├── node_modules_next_558e143a._.js
+│   │   │       ├── node_modules_next_558e143a._.js.map
+│   │   │       ├── node_modules_next_6a33f1fa._.js
+│   │   │       ├── node_modules_next_6a33f1fa._.js.map
+│   │   │       ├── node_modules_next_9babd674._.js
+│   │   │       ├── node_modules_next_9babd674._.js.map
+│   │   │       ├── node_modules_next_a35549af._.js
+│   │   │       ├── node_modules_next_a35549af._.js.map
+│   │   │       ├── node_modules_next_d88fdcb7._.js
+│   │   │       ├── node_modules_next_d88fdcb7._.js.map
+│   │   │       ├── node_modules_next_dist_01678b9f._.js
+│   │   │       ├── node_modules_next_dist_01678b9f._.js.map
+│   │   │       ├── node_modules_next_dist_4b672784._.js
+│   │   │       ├── node_modules_next_dist_4b672784._.js.map
+│   │   │       ├── node_modules_next_dist_7780d90d._.js
+│   │   │       ├── node_modules_next_dist_7780d90d._.js.map
+│   │   │       ├── node_modules_next_dist_78de34a9._.js
+│   │   │       ├── node_modules_next_dist_78de34a9._.js.map
+│   │   │       ├── node_modules_next_dist_c59391ff._.js
+│   │   │       ├── node_modules_next_dist_c59391ff._.js.map
+│   │   │       ├── node_modules_next_dist_client_469e64af._.js
+│   │   │       ├── node_modules_next_dist_client_469e64af._.js.map
+│   │   │       ├── node_modules_next_dist_client_857665f3._.js
+│   │   │       ├── node_modules_next_dist_client_857665f3._.js.map
+│   │   │       ├── node_modules_next_dist_client_88f52f03._.js
+│   │   │       ├── node_modules_next_dist_client_88f52f03._.js.map
+│   │   │       ├── node_modules_next_dist_client_components_1c8c21fa._.js
+│   │   │       ├── node_modules_next_dist_client_components_1c8c21fa._.js.map
+│   │   │       ├── node_modules_next_dist_client_components_builtin_forbidden_651c1c6d.js
+│   │   │       ├── node_modules_next_dist_client_components_builtin_forbidden_651c1c6d.js.map
+│   │   │       ├── node_modules_next_dist_client_components_builtin_global-error_af93ecd6.js
+│   │   │       ├── node_modules_next_dist_client_components_builtin_global-error_af93ecd6.js.map
+│   │   │       ├── node_modules_next_dist_client_components_builtin_unauthorized_a3bc0a28.js
+│   │   │       ├── node_modules_next_dist_client_components_builtin_unauthorized_a3bc0a28.js.map
+│   │   │       ├── node_modules_next_dist_client_de5c7cef._.js
+│   │   │       ├── node_modules_next_dist_client_de5c7cef._.js.map
+│   │   │       ├── node_modules_next_dist_compiled_5382c66d._.js
+│   │   │       ├── node_modules_next_dist_compiled_5382c66d._.js.map
+│   │   │       ├── node_modules_next_dist_compiled_b9ce0ffa._.js
+│   │   │       ├── node_modules_next_dist_compiled_b9ce0ffa._.js.map
+│   │   │       ├── node_modules_next_dist_compiled_f1826710._.js
+│   │   │       ├── node_modules_next_dist_compiled_f1826710._.js.map
+│   │   │       ├── node_modules_next_dist_compiled_ffb62315._.js
+│   │   │       ├── node_modules_next_dist_compiled_ffb62315._.js.map
+│   │   │       ├── node_modules_next_dist_compiled_next-devtools_index_4258ed4e.js
+│   │   │       ├── node_modules_next_dist_compiled_next-devtools_index_4258ed4e.js.map
+│   │   │       ├── node_modules_next_dist_esm_b72f3b11._.js
+│   │   │       ├── node_modules_next_dist_esm_b72f3b11._.js.map
+│   │   │       ├── node_modules_next_dist_f8224a4e._.js
+│   │   │       ├── node_modules_next_dist_f8224a4e._.js.map
+│   │   │       ├── node_modules_next_dist_server_route-modules_app-page_1b403596._.js
+│   │   │       ├── node_modules_next_dist_server_route-modules_app-page_1b403596._.js.map
+│   │   │       ├── node_modules_next_dist_shared_lib_138e146a._.js
+│   │   │       ├── node_modules_next_dist_shared_lib_138e146a._.js.map
+│   │   │       ├── node_modules_next_dist_shared_lib_13932146._.js
+│   │   │       ├── node_modules_next_dist_shared_lib_13932146._.js.map
+│   │   │       ├── node_modules_next_dist_shared_lib_84bc77f9._.js
+│   │   │       ├── node_modules_next_dist_shared_lib_84bc77f9._.js.map
+│   │   │       ├── node_modules_next_ea5e8f3d._.js
+│   │   │       ├── node_modules_next_ea5e8f3d._.js.map
+│   │   │       ├── node_modules_swr_dist_fdde5130._.js
+│   │   │       ├── node_modules_swr_dist_fdde5130._.js.map
+│   │   │       ├── node_modules_tailwind-merge_dist_bundle-mjs_mjs_6bc68adb._.js
+│   │   │       ├── node_modules_tailwind-merge_dist_bundle-mjs_mjs_6bc68adb._.js.map
+│   │   │       ├── node_modules_tailwind-merge_dist_bundle-mjs_mjs_6c53872a._.js
+│   │   │       └── node_modules_tailwind-merge_dist_bundle-mjs_mjs_6c53872a._.js.map
+│   │   ├── edge
+│   │   │   └── chunks
+│   │   │       ├── _d8248466._.js
+│   │   │       ├── _d8248466._.js.map
+│   │   │       ├── [root-of-the-server]__5e96eddc._.js
+│   │   │       ├── [root-of-the-server]__5e96eddc._.js.map
+│   │   │       ├── edge-wrapper_af4b4f5b.js
+│   │   │       └── edge-wrapper_af4b4f5b.js.map
+│   │   ├── edge-runtime-webpack.js
+│   │   ├── edge-runtime-webpack.js.map
+│   │   ├── functions-config-manifest.json
+│   │   ├── interception-route-rewrite-manifest.js
+│   │   ├── middleware
+│   │   │   └── middleware-manifest.json
+│   │   ├── middleware-build-manifest.js
+│   │   ├── middleware-manifest.json
+│   │   ├── middleware-react-loadable-manifest.js
+│   │   ├── middleware.js
+│   │   ├── middleware.js.map
+│   │   ├── next-font-manifest.js
+│   │   ├── next-font-manifest.json
+│   │   ├── pages
+│   │   │   ├── _app
+│   │   │   │   ├── build-manifest.json
+│   │   │   │   ├── next-font-manifest.json
+│   │   │   │   ├── pages-manifest.json
+│   │   │   │   └── react-loadable-manifest.json
+│   │   │   ├── _app.js
+│   │   │   ├── _app.js.map
+│   │   │   ├── _app.js.nft.json
+│   │   │   ├── _document
+│   │   │   │   ├── next-font-manifest.json
+│   │   │   │   ├── pages-manifest.json
+│   │   │   │   └── react-loadable-manifest.json
+│   │   │   ├── _document.js
+│   │   │   ├── _document.js.map
+│   │   │   ├── _document.js.nft.json
+│   │   │   ├── _error
+│   │   │   │   ├── build-manifest.json
+│   │   │   │   ├── next-font-manifest.json
+│   │   │   │   ├── pages-manifest.json
+│   │   │   │   └── react-loadable-manifest.json
+│   │   │   ├── _error.js
+│   │   │   ├── _error.js.map
+│   │   │   ├── _error.js.nft.json
+│   │   │   ├── 404.html
+│   │   │   └── 500.html
+│   │   ├── pages-manifest.json
+│   │   ├── server-reference-manifest.js
+│   │   ├── server-reference-manifest.json
+│   │   └── webpack-runtime.js
+│   ├── static
+│   │   ├── 71arXKtuYCvQ4jBUKGEj2
+│   │   │   ├── _buildManifest.js
+│   │   │   └── _ssgManifest.js
+│   │   ├── chunks
+│   │   │   ├── _01f48b92._.js
+│   │   │   ├── _01f48b92._.js.map
+│   │   │   ├── _34944f2a._.js
+│   │   │   ├── _34944f2a._.js.map
+│   │   │   ├── _380ec1dc._.js
+│   │   │   ├── _380ec1dc._.js.map
+│   │   │   ├── _7e472af8._.js
+│   │   │   ├── _7e472af8._.js.map
+│   │   │   ├── _9a667b85._.js
+│   │   │   ├── _9a667b85._.js.map
+│   │   │   ├── _c29e2dbe._.js
+│   │   │   ├── _c29e2dbe._.js.map
+│   │   │   ├── _ce22c11e._.js
+│   │   │   ├── _ce22c11e._.js.map
+│   │   │   ├── _cf0b516f._.js
+│   │   │   ├── _cf0b516f._.js.map
+│   │   │   ├── _e69f0d32._.js
+│   │   │   ├── [next]_entry_page-loader_ts_8ccf5f86._.js
+│   │   │   ├── [next]_entry_page-loader_ts_8ccf5f86._.js.map
+│   │   │   ├── [next]_entry_page-loader_ts_f9f6e84e._.js
+│   │   │   ├── [next]_entry_page-loader_ts_f9f6e84e._.js.map
+│   │   │   ├── [next]_internal_font_google_inter_92243eee_module_css_e59ae46c._.single.css
+│   │   │   ├── [next]_internal_font_google_inter_92243eee_module_css_e59ae46c._.single.css.map
+│   │   │   ├── [root-of-the-server]__010dee56._.js
+│   │   │   ├── [root-of-the-server]__010dee56._.js.map
+│   │   │   ├── [root-of-the-server]__95ff7225._.js
+│   │   │   ├── [root-of-the-server]__95ff7225._.js.map
+│   │   │   ├── [root-of-the-server]__a917f39f._.css
+│   │   │   ├── [root-of-the-server]__a917f39f._.css.map
+│   │   │   ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_5af4a3bc._.js
+│   │   │   ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_61dcf9ba._.js
+│   │   │   ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_61dcf9ba._.js.map
+│   │   │   ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_6aaa83c7._.js
+│   │   │   ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_6aaa83c7._.js.map
+│   │   │   ├── 4bd1b696-cf72ae8a39fa05aa.js
+│   │   │   ├── 642.8f4342ead8ec4644.js
+│   │   │   ├── 654-183e546512a7823e.js
+│   │   │   ├── 8069e_@clerk_nextjs_dist_esm_app-router_client_keyless-creator-reader_01f846e1.js
+│   │   │   ├── 8069e_@clerk_nextjs_dist_esm_app-router_client_keyless-creator-reader_12ebc333.js
+│   │   │   ├── 8069e_@clerk_nextjs_dist_esm_app-router_client_keyless-creator-reader_4c839a7d.js
+│   │   │   ├── 8069e_@clerk_nextjs_dist_esm_app-router_client_keyless-creator-reader_80679b02.js
+│   │   │   ├── 8069e_@clerk_nextjs_dist_esm_app-router_client_keyless-creator-reader_d6958581.js
+│   │   │   ├── 8069e_@clerk_nextjs_dist_esm_app-router_client_keyless-creator-reader_de55ca9d.js
+│   │   │   ├── 8069e_@clerk_nextjs_dist_esm_app-router_client_keyless-creator-reader_fe774280.js
+│   │   │   ├── 821-9df1023924dd0d63.js
+│   │   │   ├── 855-619308bfbc007972.js
+│   │   │   ├── 926.38826f4660552fa4.js
+│   │   │   ├── 964-7a34cadcb7695cec.js
+│   │   │   ├── app
+│   │   │   │   ├── _not-found
+│   │   │   │   │   └── page-fdfb5b5c36664f7f.js
+│   │   │   │   ├── (auth)
+│   │   │   │   │   ├── layout-e1d8d60c57f6440c.js
+│   │   │   │   │   └── sign-in
+│   │   │   │   │       ├── [[...sign-in]]
+│   │   │   │   │       │   └── page-3dfe26d7b6008c4e.js
+│   │   │   │   │       └── sign-up
+│   │   │   │   │           └── [[...sign-up]]
+│   │   │   │   │               └── page-3dfe26d7b6008c4e.js
+│   │   │   │   ├── layout-8a6ff79eebd849f0.js
+│   │   │   │   └── page-85a2ce831ea3b48e.js
+│   │   │   ├── app_(auth)_sign-in_[[___sign-in]]_page_jsx_3eb75ce2._.js
+│   │   │   ├── app_favicon_ico_mjs_c5600bb8._.js
+│   │   │   ├── app_globals_css_e59ae46c._.single.css
+│   │   │   ├── app_globals_css_e59ae46c._.single.css.map
+│   │   │   ├── app_layout_68b267f5.js
+│   │   │   ├── app_page_20115249.js
+│   │   │   ├── app_page_287667fc.js
+│   │   │   ├── app_page_2c3e1363.js
+│   │   │   ├── app_page_3eb75ce2.js
+│   │   │   ├── app_page_c50c0b70.js
+│   │   │   ├── app_page_ea38cbe4.js
+│   │   │   ├── app_page_fce553dc.js
+│   │   │   ├── components_hero_jsx_e6f01a24._.js
+│   │   │   ├── components_hero_jsx_e6f01a24._.js.map
+│   │   │   ├── framework-7c95b8e5103c9e90.js
+│   │   │   ├── main-app-a44e5505e06ac2ff.js
+│   │   │   ├── main-c2b2eab26eb8f9d2.js
+│   │   │   ├── node_modules_@clerk_backend_dist_22cae15d._.js
+│   │   │   ├── node_modules_@clerk_backend_dist_22cae15d._.js.map
+│   │   │   ├── node_modules_@clerk_clerk-react_dist_ba5a8b10._.js
+│   │   │   ├── node_modules_@clerk_clerk-react_dist_ba5a8b10._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_2836712d._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_2836712d._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_0c364d85._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_0c364d85._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_5d3494ac._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_5d3494ac._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_5efee024._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_5efee024._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_8788d24b._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_8788d24b._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_aa586df3._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_aa586df3._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_c226e1fe._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_c226e1fe._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_de5317e9._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_de5317e9._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_keyless-actions_04392377.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_keyless-actions_069617c5.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_keyless-actions_0b79606a.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_keyless-actions_4b67adfe.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_keyless-actions_8a514c7a.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_keyless-actions_f927775a.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_app-router_keyless-actions_fe5a95a9.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_cec1be83._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_cec1be83._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_client-boundary_5c3cad18._.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_client-boundary_5c3cad18._.js.map
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_server_fs_middleware-location_01f846e1.js
+│   │   │   ├── node_modules_@clerk_nextjs_dist_esm_server_fs_middleware-location_80679b02.js
+│   │   │   ├── node_modules_@clerk_shared_dist_3e0d7195._.js
+│   │   │   ├── node_modules_@clerk_shared_dist_3e0d7195._.js.map
+│   │   │   ├── node_modules_@clerk_shared_dist_d8744f5b._.js
+│   │   │   ├── node_modules_@clerk_shared_dist_d8744f5b._.js.map
+│   │   │   ├── node_modules_@swc_helpers_cjs_8e433861._.js
+│   │   │   ├── node_modules_@swc_helpers_cjs_8e433861._.js.map
+│   │   │   ├── node_modules_2a307bba._.js
+│   │   │   ├── node_modules_2a307bba._.js.map
+│   │   │   ├── node_modules_3f002b67._.js
+│   │   │   ├── node_modules_3f002b67._.js.map
+│   │   │   ├── node_modules_456b165f._.js
+│   │   │   ├── node_modules_456b165f._.js.map
+│   │   │   ├── node_modules_4597e28e._.js
+│   │   │   ├── node_modules_4597e28e._.js.map
+│   │   │   ├── node_modules_5ca72932._.js
+│   │   │   ├── node_modules_5ca72932._.js.map
+│   │   │   ├── node_modules_71ce89c3._.js
+│   │   │   ├── node_modules_71ce89c3._.js.map
+│   │   │   ├── node_modules_82a0dec5._.js
+│   │   │   ├── node_modules_82a0dec5._.js.map
+│   │   │   ├── node_modules_8306ca84._.js
+│   │   │   ├── node_modules_8306ca84._.js.map
+│   │   │   ├── node_modules_8a89f0fb._.js
+│   │   │   ├── node_modules_8a89f0fb._.js.map
+│   │   │   ├── node_modules_be484645._.js
+│   │   │   ├── node_modules_be484645._.js.map
+│   │   │   ├── node_modules_f2979c3a._.js
+│   │   │   ├── node_modules_f2979c3a._.js.map
+│   │   │   ├── node_modules_f9cf6247._.js
+│   │   │   ├── node_modules_f9cf6247._.js.map
+│   │   │   ├── node_modules_framer-motion_dist_es_c1edb52d._.js
+│   │   │   ├── node_modules_framer-motion_dist_es_c1edb52d._.js.map
+│   │   │   ├── node_modules_framer-motion_dist_es_c4413217._.js
+│   │   │   ├── node_modules_framer-motion_dist_es_c4413217._.js.map
+│   │   │   ├── node_modules_motion-dom_dist_es_bf1a9e95._.js
+│   │   │   ├── node_modules_motion-dom_dist_es_bf1a9e95._.js.map
+│   │   │   ├── node_modules_motion-dom_dist_es_ed5d7820._.js
+│   │   │   ├── node_modules_motion-dom_dist_es_ed5d7820._.js.map
+│   │   │   ├── node_modules_next_04b343c5._.js
+│   │   │   ├── node_modules_next_04b343c5._.js.map
+│   │   │   ├── node_modules_next_0a18bd2d._.js
+│   │   │   ├── node_modules_next_0a18bd2d._.js.map
+│   │   │   ├── node_modules_next_1dd40771._.js
+│   │   │   ├── node_modules_next_1dd40771._.js.map
+│   │   │   ├── node_modules_next_95febae6._.js
+│   │   │   ├── node_modules_next_95febae6._.js.map
+│   │   │   ├── node_modules_next_a3ae083b._.js
+│   │   │   ├── node_modules_next_a3ae083b._.js.map
+│   │   │   ├── node_modules_next_a64da696._.js
+│   │   │   ├── node_modules_next_a64da696._.js.map
+│   │   │   ├── node_modules_next_app_95ea274f.js
+│   │   │   ├── node_modules_next_app_95ea274f.js.map
+│   │   │   ├── node_modules_next_dist_01fcdebf._.js
+│   │   │   ├── node_modules_next_dist_01fcdebf._.js.map
+│   │   │   ├── node_modules_next_dist_445d8acf._.js
+│   │   │   ├── node_modules_next_dist_445d8acf._.js.map
+│   │   │   ├── node_modules_next_dist_7c4b9b2a._.js
+│   │   │   ├── node_modules_next_dist_7c4b9b2a._.js.map
+│   │   │   ├── node_modules_next_dist_ad6392d3._.js
+│   │   │   ├── node_modules_next_dist_ad6392d3._.js.map
+│   │   │   ├── node_modules_next_dist_build_polyfills_polyfill-nomodule.js
+│   │   │   ├── node_modules_next_dist_client_20b209c9._.js
+│   │   │   ├── node_modules_next_dist_client_20b209c9._.js.map
+│   │   │   ├── node_modules_next_dist_client_becf32a6._.js
+│   │   │   ├── node_modules_next_dist_client_becf32a6._.js.map
+│   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_20115249.js
+│   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_287667fc.js
+│   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_2c3e1363.js
+│   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_3eb75ce2.js
+│   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_c50c0b70.js
+│   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_ea38cbe4.js
+│   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_fce553dc.js
+│   │   │   ├── node_modules_next_dist_compiled_0f1b9fd4._.js
+│   │   │   ├── node_modules_next_dist_compiled_0f1b9fd4._.js.map
+│   │   │   ├── node_modules_next_dist_compiled_ca41998d._.js
+│   │   │   ├── node_modules_next_dist_compiled_ca41998d._.js.map
+│   │   │   ├── node_modules_next_dist_compiled_next-devtools_index_82a36480.js
+│   │   │   ├── node_modules_next_dist_compiled_next-devtools_index_82a36480.js.map
+│   │   │   ├── node_modules_next_dist_compiled_next-devtools_index_d575f738.js
+│   │   │   ├── node_modules_next_dist_compiled_next-devtools_index_d575f738.js.map
+│   │   │   ├── node_modules_next_dist_compiled_react-dom_1f56dc06._.js
+│   │   │   ├── node_modules_next_dist_compiled_react-dom_1f56dc06._.js.map
+│   │   │   ├── node_modules_next_dist_shared_lib_3cbd5cc2._.js
+│   │   │   ├── node_modules_next_dist_shared_lib_3cbd5cc2._.js.map
+│   │   │   ├── node_modules_next_dist_shared_lib_492fcef6._.js
+│   │   │   ├── node_modules_next_dist_shared_lib_492fcef6._.js.map
+│   │   │   ├── node_modules_next_error_8c8bf619.js
+│   │   │   ├── node_modules_next_error_8c8bf619.js.map
+│   │   │   ├── node_modules_next_headers_01f846e1.js
+│   │   │   ├── node_modules_next_headers_80679b02.js
+│   │   │   ├── node_modules_react-dom_82bb97c6._.js
+│   │   │   ├── node_modules_react-dom_82bb97c6._.js.map
+│   │   │   ├── node_modules_swr_dist_24149bb6._.js
+│   │   │   ├── node_modules_swr_dist_24149bb6._.js.map
+│   │   │   ├── node_modules_tailwind-merge_dist_bundle-mjs_mjs_b854acb4._.js
+│   │   │   ├── node_modules_tailwind-merge_dist_bundle-mjs_mjs_b854acb4._.js.map
+│   │   │   ├── pages
+│   │   │   │   ├── _app-0a0020ddd67f79cf.js
+│   │   │   │   ├── _app.js
+│   │   │   │   ├── _error-03529f2c21436739.js
+│   │   │   │   └── _error.js
+│   │   │   ├── pages__app_4b3c26ac._.js
+│   │   │   ├── pages__app_4b3c26ac._.js.map
+│   │   │   ├── pages__app_5771e187._.js
+│   │   │   ├── pages__error_50fcf3db._.js
+│   │   │   ├── pages__error_50fcf3db._.js.map
+│   │   │   ├── pages__error_5771e187._.js
+│   │   │   ├── polyfills-42372ed130431b0a.js
+│   │   │   └── webpack-9580752303058d51.js
+│   │   ├── css
+│   │   │   └── a28ff940b599cbef.css
+│   │   ├── development
+│   │   │   ├── _buildManifest.js
+│   │   │   ├── _clientMiddlewareManifest.json
+│   │   │   └── _ssgManifest.js
+│   │   └── media
+│   │       ├── 06ba6ef833b337bc-s.p.0faac26c.woff2
+│   │       ├── 1a97932d2ea76c90-s.ac666cb5.woff2
+│   │       ├── 26a46d62cd723877-s.woff2
+│   │       ├── 2a2d10660758e7fa-s.91b7455f.woff2
+│   │       ├── 55c55f0601d81cf3-s.woff2
+│   │       ├── 581909926a08bbc8-s.woff2
+│   │       ├── 8e9860b6e62d6359-s.woff2
+│   │       ├── 97e0cb1ae144a2a9-s.woff2
+│   │       ├── a973f82a0d056f9e-s.99c7dd4e.woff2
+│   │       ├── c0062fcfb5f4a9e6-s.b7398c1c.woff2
+│   │       ├── d6f0f7ef0a66b318-s.927aef78.woff2
+│   │       ├── df0a9ae256c0569c-s.woff2
+│   │       ├── e27fd546b8a0677f-s.569fab99.woff2
+│   │       ├── e4af272ccee01ff0-s.p.woff2
+│   │       ├── favicon.45db1c09.ico
+│   │       └── favicon.7a295aa9.ico
+│   ├── trace
+│   └── types
+│       ├── app
+│       │   ├── (auth)
+│       │   │   └── sign-in
+│       │   │       ├── [[...sign-in]]
+│       │   │       │   └── page.ts
+│       │   │       └── sign-up
+│       │   │           └── [[...sign-up]]
+│       │   │               └── page.ts
+│       │   ├── layout.ts
+│       │   └── page.ts
+│       ├── cache-life.d.ts
+│       └── package.json
+├── app
+│   ├── (auth)
+│   │   ├── layout.js
+│   │   └── sign-in
+│   │       ├── [[...sign-in]]
+│   │       │   └── page.jsx
+│   │       └── sign-up
+│   │           └── [[...sign-up]]
+│   │               └── page.jsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+├── components
+│   ├── header.jsx
+│   ├── hero.jsx
+│   └── ui
+│       ├── badge.jsx
+│       ├── button.jsx
+│       ├── calendar.jsx
+│       ├── card.jsx
+│       ├── checkbox.jsx
+│       ├── drawer.jsx
+│       ├── dropdown-menu.jsx
+│       ├── input.jsx
+│       ├── popover.jsx
+│       ├── progress.jsx
+│       ├── select.jsx
+│       ├── switch.jsx
+│       ├── table.jsx
+│       └── tooltip.jsx
+├── components.json
+├── data
+│   └── landing.js
+├── eslint.config.mjs
+├── jsconfig.json
+├── lib
+│   ├── arcjet.js
+│   ├── CheckUser.js
+│   ├── prisma.js
+│   └── utils.js
+├── middleware.js
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── prisma
+│   ├── migrations
+│   │   ├── 20250812183611_create_models
+│   │   │   └── migration.sql
+│   │   └── migration_lock.toml
+│   └── schema.prisma
+├── public
+│   ├── .DS_Store
+│   ├── apple-touch-icon.png
+│   ├── banner.png
+│   ├── favicon-32x32.png
+│   └── logo.png
+├── README.md
+└── tree.txt
+
+85 directories, 694 files
