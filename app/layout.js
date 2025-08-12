@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Instagram, Twitter, Linkedin, Mail, Phone, ChevronUp } from "lucide-react";
+import { Instagram, Twitter, Linkedin, Mail, Phone, ChevronUp, WorkflowIcon, WebhookIcon, Globe } from "lucide-react";
 import Link from "next/link";
 import ThemeProvider from "@/components/ThemeProvider";
 
@@ -113,6 +113,14 @@ export default function RootLayout({ children }) {
                       className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-500 transition-all duration-300 hover:scale-125"
                     >
                       <Linkedin size={26} />
+                    </a>
+                    <a
+                      href="https://negai.africa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-500 transition-all duration-300 hover:scale-125"
+                    >
+                      <Globe size={26} />
                     </a>
                   </div>
                 </div>
