@@ -74,7 +74,7 @@ const HeroSection = () => {
                     initial="hidden"
                     animate="visible"
                     variants={textVariants}
-                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-orange-800 mb-6 sm:mb-8"
+                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-orange-800 mb-6 sm:mb-8 mt-19"
                 >
                     Finance Management <br /> Made Intelligent
                 </motion.h1>
