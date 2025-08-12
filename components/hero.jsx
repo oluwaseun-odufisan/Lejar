@@ -67,14 +67,14 @@ const HeroSection = () => {
     };
 
     return (
-        <section ref={sectionRef} className="relative overflow-hidden py-32 px-4 bg-gradient-to-b from-orange-50 to-orange-100">
+        <section ref={sectionRef} className="relative overflow-hidden py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-orange-50 to-orange-100">
             <div className="container mx-auto text-center max-w-7xl relative z-10">
                 <motion.h1
                     custom={0}
                     initial="hidden"
                     animate="visible"
                     variants={textVariants}
-                    className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-orange-800 mb-8"
+                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-orange-800 mb-6 sm:mb-8"
                 >
                     Finance Management <br /> Made Intelligent
                 </motion.h1>
@@ -83,7 +83,7 @@ const HeroSection = () => {
                     initial="hidden"
                     animate="visible"
                     variants={textVariants}
-                    className="text-xl md:text-2xl text-gray-700 mb-12 max-w-4xl mx-auto font-medium"
+                    className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto font-medium"
                 >
                     Automate your financial tracking, gain AI-powered insights, and optimize your earnings with precision and ease.
                 </motion.p>
@@ -92,12 +92,12 @@ const HeroSection = () => {
                     initial="hidden"
                     animate="visible"
                     variants={textVariants}
-                    className="flex justify-center gap-6 mb-20"
+                    className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-12 sm:mb-16 md:mb-20"
                 >
                     <Link href="/dashboard">
                         <Button
                             size="lg"
-                            className="px-10 py-6 text-xl font-semibold bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+                            className="w-full sm:w-auto px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-semibold bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                         >
                             Get Started
                         </Button>
@@ -106,7 +106,7 @@ const HeroSection = () => {
                         <Button
                             size="lg"
                             variant="outline"
-                            className="px-10 py-6 text-xl font-semibold border-2 border-orange-600 text-orange-600 hover:bg-orange-50 hover:border-orange-700 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
+                            className="w-full sm:w-auto px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-semibold border-2 border-orange-600 text-orange-600 hover:bg-orange-50 hover:border-orange-700 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg"
                         >
                             Watch Demo
                         </Button>
@@ -118,7 +118,7 @@ const HeroSection = () => {
                     variants={imageVariants}
                     whileHover="hover"
                     style={{ y: imageY, opacity: imageOpacity }}
-                    className="relative rounded-2xl shadow-2xl border border-orange-200 overflow-hidden mx-auto w-full"
+                    className="relative rounded-2xl shadow-2xl border border-orange-200 overflow-hidden mx-auto w-full max-w-5xl"
                 >
                     <Image
                         src="/banner.png"
@@ -137,14 +137,14 @@ const HeroSection = () => {
                     initial="hidden"
                     animate="visible"
                     variants={bgElementVariants}
-                    className="absolute top-1/4 left-1/6 w-96 h-96 bg-gradient-radial from-orange-300 to-transparent rounded-full filter blur-3xl"
+                    className="absolute top-1/4 left-1/6 w-48 sm:w-64 md:w-96 h-48 sm:h-64 md:h-96 bg-gradient-radial from-orange-300 to-transparent rounded-full filter blur-3xl"
                 ></motion.div>
                 <motion.div
                     initial="hidden"
                     animate="visible"
                     variants={bgElementVariants}
                     transition={{ duration: 2.5, delay: 0.4 }}
-                    className="absolute bottom-1/4 right-1/6 w-96 h-96 bg-gradient-radial from-orange-400 to-transparent rounded-full filter blur-3xl"
+                    className="absolute bottom-1/4 right-1/6 w-48 sm:w-64 md:w-96 h-48 sm:h-64 md:h-96 bg-gradient-radial from-orange-400 to-transparent rounded-full filter blur-3xl"
                 ></motion.div>
             </div>
         </section>
