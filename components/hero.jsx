@@ -118,14 +118,14 @@ const HeroSection = () => {
                     variants={imageVariants}
                     whileHover="hover"
                     style={{ y: imageY, opacity: imageOpacity }}
-                    className="relative rounded-2xl shadow-2xl border border-orange-200 overflow-hidden mx-auto w-full max-w-5xl"
+                    className="relative rounded-2xl shadow-2xl border border-orange-200 overflow-hidden mx-auto w-full max-w-8xl"
                 >
                     <Image
                         src="/banner.png"
                         layout="responsive"
                         width={1920}
-                        height={1080}
-                        alt="Financial Dashboard Preview"
+                        height={720}
+                        alt="Banner Preview"
                         className="w-full h-auto"
                         priority
                     />
