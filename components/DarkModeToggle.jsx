@@ -7,13 +7,9 @@ const DarkModeToggle = () => {
     const [isDark, setIsDark] = useState(false);
 
     useEffect(() => {
-        const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+        // Sync state with current theme
+        const isDarkMode = document.documentElement.classList.contains("dark");
         setIsDark(isDarkMode);
-        if (isDarkMode) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
     }, []);
 
     const toggleDarkMode = () => {
@@ -21,9 +17,11 @@ const DarkModeToggle = () => {
         setIsDark(newDarkMode);
         if (newDarkMode) {
             document.documentElement.classList.add("dark");
+            document.documentElement.classList.remove("light");
             localStorage.setItem("darkMode", "enabled");
         } else {
             document.documentElement.classList.remove("dark");
+            document.documentElement.classList.add("light");
             localStorage.setItem("darkMode", "disabled");
         }
     };
