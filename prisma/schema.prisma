@@ -1,0 +1,115 @@
+// Prisma schema file for defining the database structure and ORM mappings
+// This schema defines the data models, relationships, and configurations for the application
+// using PostgreSQL as the database provider.
+
+// Specifies the Prisma Client generator to create the Prisma Client library
+generator client {
+  provider = "prisma-client-js" // Uses prisma-client-js to generate the client for interacting with the database
+}
+
+// Defines the data source configuration for the PostgreSQL database
+datasource db {
+  provider  = "postgresql" // Specifies PostgreSQL as the database provider
+  url       = env("DATABASE_URL") // Database connection URL, sourced from environment variables
+  directUrl = env("DIRECT_URL") // Direct database URL for migrations or direct queries, sourced from environment variables
+}
+
+// User model representing a user in the application
+model User {
+  id            String    @id @default(uuid()) // Unique identifier for the user, auto-generated UUID
+  clerkUserId   String    @unique // Unique Clerk user ID for authentication integration
+  email         String    @unique // User's email address, must be unique
+  name          String?   // User's name, optional
+  imageUrl      String?   // URL for user's profile image, optional
+  transactions  Transaction[] // One-to-many relation: User can have multiple transactions
+  accounts      Account[] // One-to-many relation: User can have multiple accounts
+  budgets       Budget[]  // One-to-many relation: User can have multiple budgets
+  createdAt     DateTime  @default(now()) // Timestamp for when the user was created
+  updatedAt     DateTime  @updatedAt // Timestamp for when the user was last updated
+
+  @@map("users") // Maps the User model to the 'users' table in the database
+}
+
+// Account model representing a financial account owned by a user
+model Account {
+  id           String        @id @default(uuid()) // Unique identifier for the account, auto-generated UUID
+  name         String        // Name of the account (e.g., "Savings Account")
+  type         AccountType   // Type of account (e.g., CURRENT or SAVINGS), defined in enum
+  balance      Decimal       @default(0) // Current balance of the account, defaults to 0
+  isDefault    Boolean       @default(false) // Indicates if this is the user's default account
+  userId       String        // Foreign key referencing the User model
+  user         User          @relation(fields: [userId], references: [id], onDelete: Cascade) // Relation to User, deletes account if user is deleted
+  transactions Transaction[] // One-to-many relation: Account can have multiple transactions
+  createdAt    DateTime      @default(now()) // Timestamp for when the account was created
+  updatedAt    DateTime      @updatedAt // Timestamp for when the account was last updated
+
+  @@index([userId]) // Index on userId for faster queries
+  @@map("accounts") // Maps the Account model to the 'accounts' table in the database
+}
+
+// Transaction model representing a financial transaction
+model Transaction {
+  id                String            @id @default(uuid()) // Unique identifier for the transaction, auto-generated UUID
+  type              TransactionType   // Type of transaction (e.g., INCOME or EXPENSE), defined in enum
+  amount            Decimal           // Amount of the transaction
+  description       String?           // Optional description of the transaction
+  date              DateTime          // Date when the transaction occurred
+  category          String            // Category of the transaction (e.g., "Groceries", "Salary")
+  receiptUrl        String?           // Optional URL for the transaction receipt
+  isRecurring       Boolean           @default(false) // Indicates if the transaction is recurring
+  recurringInterval RecurringInterval? // Interval for recurring transactions (e.g., DAILY, MONTHLY), nullable
+  nextRecurringDate DateTime?         // Next scheduled date for a recurring transaction, nullable
+  lastProcessed     DateTime?         // Last time the recurring transaction was processed, nullable
+  status            TransactionStatus @default(COMPLETED) // Status of the transaction (e.g., PENDING, COMPLETED), defined in enum
+  userId            String            // Foreign key referencing the User model
+  user              User              @relation(fields: [userId], references: [id], onDelete: Cascade) // Relation to User, deletes transaction if user is deleted
+  accountId         String            // Foreign key referencing the Account model
+  account           Account           @relation(fields: [accountId], references: [id], onDelete: Cascade) // Relation to Account, deletes transaction if account is deleted
+  createdAt         DateTime          @default(now()) // Timestamp for when the transaction was created
+  updatedAt         DateTime          @updatedAt // Timestamp for when the transaction was last updated
+
+  @@index([userId]) // Index on userId for faster queries
+  @@index([accountId]) // Index on accountId for faster queries
+  @@map("transactions") // Maps the Transaction model to the 'transactions' table in the database
+}
+
+// Budget model representing a user's budget
+model Budget {
+  id            String       @id @default(uuid()) // Unique identifier for the budget, auto-generated UUID
+  amount        Decimal      // Budget amount
+  lastAlertSent DateTime?    // Timestamp of the last budget alert sent, nullable
+  userId        String       @unique // Foreign key referencing the User model, each user has one budget
+  user          User         @relation(fields: [userId], references: [id], onDelete: Cascade) // Relation to User, deletes budget if user is deleted
+  createdAt     DateTime     @default(now()) // Timestamp for when the budget was created
+  updatedAt     DateTime     @updatedAt // Timestamp for when the budget was last updated
+
+  @@index([userId]) // Index on userId for faster queries
+  @@map("budgets") // Maps the Budget model to the 'budgets' table in the database
+}
+
+// Enum defining possible transaction types
+enum TransactionType {
+  INCOME  // Represents money received (e.g., salary, gifts)
+  EXPENSE // Represents money spent (e.g., groceries, bills)
+}
+
+// Enum defining possible account types
+enum AccountType {
+  CURRENT // Represents a checking or current account
+  SAVINGS // Represents a savings account
+}
+
+// Enum defining possible transaction statuses
+enum TransactionStatus {
+  PENDING   // Transaction is pending and not yet processed
+  COMPLETED // Transaction has been successfully processed
+  FAILED    // Transaction failed to process
+}
+
+// Enum defining possible intervals for recurring transactions
+enum RecurringInterval {
+  DAILY   // Recurring transaction happens every day
+  WEEKLY  // Recurring transaction happens every week
+  MONTHLY // Recurring transaction happens every month
+  YEARLY  // Recurring transaction happens every year
+}

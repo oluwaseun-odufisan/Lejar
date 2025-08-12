@@ -52,8 +52,8 @@ const LandingPage = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
-        delay: i * 0.2,
+        duration: 0.3,
+        delay: i * 0.1,
         ease: [0.4, 0, 0.2, 1],
       },
     }),
@@ -69,7 +69,7 @@ const LandingPage = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] },
+      transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
     },
   };
 
@@ -122,7 +122,7 @@ const LandingPage = () => {
         style={{ opacity: featuresOpacity }}
         className="py-12 sm:py-16 md:py-20 bg-white"
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.h2
             variants={textVariants}
             initial="hidden"
@@ -271,7 +271,7 @@ const LandingPage = () => {
             viewport={{ once: true }}
             className="text-base sm:text-lg text-orange-100 mb-6 sm:mb-8 max-w-2xl mx-auto"
           >
-            Join thousands of Nigerians managing their money smarter, from Lagos to Kano.
+            Join thousands of Users managing their money smarter, from Lagos to Miami.
           </motion.p>
           <Link href="/dashboard">
             <Button
