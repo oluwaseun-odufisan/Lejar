@@ -120,13 +120,13 @@ export function AccountChart({ transactions }) {
                     <div className="group text-center bg-orange-50/70 dark:bg-orange-900/20 rounded-xl p-3 shadow-sm dark:shadow-[0_2px_8px_rgba(251,146,60,0.15)] transition-all duration-300 hover:bg-orange-100 dark:hover:bg-orange-900/30 hover:shadow-md">
                         <p className="text-sm text-orange-700/70 dark:text-orange-200/70 font-medium">Total Income</p>
                         <p className="text-lg font-semibold text-orange-600 dark:text-orange-400 transition-transform duration-300 group-hover:scale-105">
-                            ${totals.income.toFixed(2)}
+                            ₦{totals.income.toFixed(2)}
                         </p>
                     </div>
                     <div className="group text-center bg-orange-50/70 dark:bg-orange-900/20 rounded-xl p-3 shadow-sm dark:shadow-[0_2px_8px_rgba(251,146,60,0.15)] transition-all duration-300 hover:bg-orange-100 dark:hover:bg-orange-900/30 hover:shadow-md">
                         <p className="text-sm text-orange-700/70 dark:text-orange-200/70 font-medium">Total Expenses</p>
                         <p className="text-lg font-semibold text-orange-800 dark:text-orange-300 transition-transform duration-300 group-hover:scale-105">
-                            ${totals.expense.toFixed(2)}
+                            ₦{totals.expense.toFixed(2)}
                         </p>
                     </div>
                     <div className="group text-center bg-orange-50/70 dark:bg-orange-900/20 rounded-xl p-3 shadow-sm dark:shadow-[0_2px_8px_rgba(251,146,60,0.15)] transition-all duration-300 hover:bg-orange-100 dark:hover:bg-orange-900/30 hover:shadow-md">
@@ -134,7 +134,7 @@ export function AccountChart({ transactions }) {
                         <p
                             className={`text-lg font-semibold transition-transform duration-300 group-hover:scale-105 ${totals.income - totals.expense >= 0 ? "text-orange-600 dark:text-orange-400" : "text-orange-800 dark:text-orange-300"}`}
                         >
-                            ${(totals.income - totals.expense).toFixed(2)}
+                            ₦{(totals.income - totals.expense).toFixed(2)}
                         </p>
                     </div>
                 </div>
@@ -165,12 +165,12 @@ export function AccountChart({ transactions }) {
                                 fontSize={14}
                                 tickLine={false}
                                 axisLine={false}
-                                tickFormatter={(value) => `$${value.toFixed(0)}`}
+                                tickFormatter={(value) => `₦${value.toFixed(0)}`}
                                 tick={{ fill: "#6b7280", fontWeight: 500 }}
                             />
                             <Tooltip
                                 formatter={(value, name) => [
-                                    `$${value.toFixed(2)}`,
+                                    `₦${value.toFixed(2)}`,
                                     name,
                                 ]}
                                 contentStyle={{

@@ -234,7 +234,7 @@ export function AddTransactionForm({
                                         value={account.id}
                                         className="text-orange-800 dark:text-orange-200 hover:bg-orange-50 dark:hover:bg-orange-900/50"
                                     >
-                                        {account.name} (${parseFloat(account.balance).toFixed(2)})
+                                        {account.name} (₦{parseFloat(account.balance).toFixed(2)})
                                     </SelectItem>
                                 ))}
                                 <CreateAccountDrawer>

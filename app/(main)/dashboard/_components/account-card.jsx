@@ -80,7 +80,7 @@ export function AccountCard({ account }) {
                         </div>
                         <div className="space-y-1">
                             <p className="text-lg xxs:text-xl sm:text-2xl lg:text-3xl font-bold text-orange-900 dark:text-orange-100 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors duration-300">
-                                ${parseFloat(balance).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                ₦{parseFloat(balance).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                             </p>
                             <p className="text-xs xxs:text-sm lg:text-base text-orange-700 dark:text-orange-300 capitalize">
                                 {type} Account

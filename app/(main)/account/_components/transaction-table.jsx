@@ -215,7 +215,6 @@ export function TransactionTable({ transactions }) {
                     />
                 </div>
             )}
-            {/* Filters */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl dark:shadow-[0_4px_20px_rgba(251,146,60,0.2)] p-4 xxs:p-5 sm:p-6 border-orange-200 dark:border-orange-700">
                 <div className="flex flex-col sm:flex-row gap-3 xxs:gap-4">
                     <div className="relative flex-1">
@@ -298,7 +297,6 @@ export function TransactionTable({ transactions }) {
                     </div>
                 </div>
             </div>
-            {/* Transactions Table */}
             <div className="relative bg-gradient-to-br from-white to-orange-50 dark:from-gray-800 dark:to-gray-900 border-orange-200 dark:border-orange-700 shadow-xl dark:shadow-[0_4px_20px_rgba(251,146,60,0.2)] rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl dark:hover:shadow-[0_10px_30px_rgba(251,146,60,0.3)]">
                 <Table>
                     <TableHeader>
@@ -412,7 +410,8 @@ export function TransactionTable({ transactions }) {
                                             transaction.type === "EXPENSE" ? "text-orange-800 dark:text-orange-300" : "text-orange-600 dark:text-orange-400"
                                         )}
                                     >
-                                        {transaction.type === "EXPENSE" ? "-" : "+"}${transaction.amount.toFixed(2)}
+                                        {transaction.type === "EXPENSE" ? "-" : "+"}
+                                        ₦{transaction.amount.toFixed(2)}
                                     </TableCell>
                                     <TableCell>
                                         {transaction.isRecurring ? (

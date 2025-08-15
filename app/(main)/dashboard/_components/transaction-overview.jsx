@@ -158,7 +158,7 @@ export function DashboardOverview({ accounts, transactions }) {
                                             ) : (
                                                 <ArrowUpRight className="h-4 xxs:h-5 w-4 xxs:w-5 mr-1" />
                                             )}
-                                            ${transaction.amount.toFixed(2)}
+                                            ₦{transaction.amount.toFixed(2)}
                                         </div>
                                     </div>
                                 </div>
@@ -211,7 +211,7 @@ export function DashboardOverview({ accounts, transactions }) {
                                     </Pie>
                                     <Tooltip
                                         formatter={(value, name) => [
-                                            `$${value.toFixed(2)}`,
+                                            `₦${value.toFixed(2)}`,
                                             `Category: ${name}`,
                                         ]}
                                         contentStyle={{

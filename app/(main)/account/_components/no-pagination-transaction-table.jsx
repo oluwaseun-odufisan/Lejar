@@ -379,7 +379,8 @@ export function NoPaginationTransactionTable({ transactions }) {
                                             transaction.type === "EXPENSE" ? "text-orange-800 dark:text-orange-300" : "text-orange-600 dark:text-orange-400"
                                         )}
                                     >
-                                        {transaction.type === "EXPENSE" ? "-" : "+"}${transaction.amount.toFixed(2)}
+                                        {transaction.type === "EXPENSE" ? "-" : "+"}
+                                        ₦{transaction.amount.toFixed(2)}
                                     </TableCell>
                                     <TableCell>
                                         {transaction.isRecurring ? (

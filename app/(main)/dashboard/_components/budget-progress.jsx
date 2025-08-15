@@ -72,7 +72,7 @@ export function BudgetProgress({ initialBudget, currentExpenses }) {
                     </CardTitle>
                     <CardDescription className="text-xs xxs:text-sm lg:text-base text-orange-700/70 dark:text-orange-300/70">
                         {initialBudget
-                            ? `$${currentExpenses.toFixed(2)} of $${initialBudget.amount.toFixed(2)} spent`
+                            ? `₦${currentExpenses.toFixed(2)} of ₦${initialBudget.amount.toFixed(2)} spent`
                             : "No budget set"}
                     </CardDescription>
                 </div>
